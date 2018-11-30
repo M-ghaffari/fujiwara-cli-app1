@@ -17,8 +17,8 @@ function get() {
 
   // URLを組み立てて、リクエストを準備する（まだリクエストは未送信）
 
-  const idEncoded = encodeURIComponent("658-0021");  // URL用にエンコード
-  const url = `http://zipcloud.ibsnet.co.jp/api/search?zipcode=${idEncoded}&pretty`;  // テンプレートリテラルを使用（バッククォートで囲む）
+  const idEncoded = encodeURIComponent("978-4-0486-6452-3");  // URL用にエンコード
+  const url = `https://api.openbd.jp/v1/get?isbn=${idEncoded}&pretty`;  // テンプレートリテラルを使用（バッククォートで囲む）
   request.open("GET", url);
 
   // サーバからレスポンスが返ってきた場合の処理を登録
